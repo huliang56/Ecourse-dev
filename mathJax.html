@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TES数字教材开发平台，开发说明,教材下载">
+  <meta name="author" content="TES">
+  <title>数字教材开发平台</title>
+  <link rel="icon" href="images/favicon.ico"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">数字教材开发平台</a>
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="develop.html">开发说明</a>
+        </li>
+        <li class="active">
+          <a href="mathJax.html">公式编辑器</a>
+        </li>
+        <li>
+          <a href="example.html">使用实例</a>
+        </li>
+        <li>
+          <a href="solution.html">问题答疑</a>
+        </li>
+        <li>
+          <a href="http://lt.tes-sys.com:8080/eep-ms/home.html">页面编辑器</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <article>
+          <h2>Tex排版系统</h2>
+          <p><b>TeX</b>是一个很好的排版工具，特别是在处理复杂的数学公式时。</p>
+          <p>常用数学符号Tex编写说明：</p>
+          <div class="tableBox">
+          	<table class="table table-bordered">
+          		<tr>
+          			<th>数学符号</th>
+          			<th>Tex表达式</th>
+          		</tr>
+          		<tr>
+          			<td>分数：分子/分母</td>
+          			<td>\frac { 分子 }{ 分母 }<br>\frac { 2 }{ 3 }</td>
+          		</tr>
+          		<tr>
+          			<td>带分数： 整数部分直接写在分数前面即可</td>
+          			<td>整数部分\frac { 分子 }{ 分母 }<br>1\frac { 2 }{ 3 }</td>
+          		</tr>
+          		<tr>
+          			<td>指数</td>
+          			<td>{ 3 }^{ 5 }</td>
+          		</tr>
+          		<tr>
+          			<td>根号</td>
+          			<td>\sqrt { 2 }<br>\sqrt [ 4 ]{ 5 }</td>
+          		</tr>
+          		<tr>
+          			<td>乘号	</td>
+          			<td>\times</td>
+          		</tr>
+          		<tr>
+          			<td>除号	</td>
+          			<td>\div</td>
+          		</tr>
+          		<tr>
+          			<td>等于</td>
+          			<td>=</td>
+          		</tr>
+          		<tr>
+          			<td>不等于</td>
+          			<td>\neq</td>
+          		</tr>
+          		<tr>
+          			<td>大于等于</td>
+          			<td>\ge</td>
+          		</tr>
+          		<tr>
+          			<td>小于等于</td>
+          			<td>\le</td>
+          		</tr>
+          		<tr>
+          			<td>约等于</td>
+          			<td>\approx</td>
+          		</tr>
+          		<tr>
+          			<td>因为</td>
+          			<td>\because</td>
+          		</tr>
+          		<tr>
+          			<td>所以	</td>
+          			<td>\therefore</td>
+          		</tr>
+          		<tr>
+          			<td>小括号 ( )</td>
+          			<td>\left(  \right)</td>
+          		</tr>
+          		<tr>
+          			<td>中括号 [ ]</td>
+          			<td>\left[  \right]</td>
+          		</tr>
+          		<tr>
+          			<td>大括号 { }</td>
+          			<td>\left{  \right}</td>
+          		</tr>
+          		<tr>
+          			<td>绝对值 ||</td>
+          			<td>\left|  \right|</td>
+          		</tr>
+          	</table>
+          </div>
+          <p>上表中未列的符号，请参考Tex编写说明或在chorome浏览器中使用
+          	<b><a href="http://s1.daumcdn.net/editor/fp/service_nc/pencil/Pencil_chromestore.html" target="_blank">公式编辑器</a></b>
+          生成。</p>
+        </article>
+        <article>
+          <h2>公式编辑器使用介绍</h2>
+          <p><b>公式编辑器网址：</b>http://s1.daumcdn.net/editor/fp/service_nc/pencil/Pencil_chromestore.html </p>
+          <p>进入公式编辑器，选择所需公式输入后，点击Save as Text。</p>
+          <div class="picMargin"><img src="images/index/Daum.png" width="700px"></div>
+          <p><b>MathJax表达式编写方法：</b></p>
+          <p class="text-danger">需要在Lex表达式开始和结束位置写上$符号，对于\ 符号，需要修改为\\ ，对于\\符号，需要修改为\\\\ （原因是页面的内容是javascript动态加载上来的，对于\符号需要转义为 \\才能使用），其中分式的\frac修改为\dfrac，且公式末尾的标点不能放入公式中（如下图）。</p>
+          <p><b>编写示例：</b></p>
+          <div class="picMargin"><img src="images/index/Daum_gongshi.png" width="700px"></div>
+        </article>
+        <article>
+          <h2>编写规范</h2>
+          <p>1.	数学公式中只能包含以下内容：</p>
+          <p>数字，运算符号（+ - × ÷，根号等其他数学符号，绝对值，小括号，中括号，大括号）</p>
+          <p>公式末尾的标点（逗号，句号，分号，问号，省略号等）不能放入公式中</p>
+          <p>2. 公式原则上不要被拆分为多个公式</p>
+        </article>
+        <article>
+          <h2>MathJax</h2>
+          <p><b>简介：</b>MathJax是一个javascript的显示引擎，用于处理Tex或MathML的文本，将其渲染成Html，便于在网页中显示。</p>
+          <p>更多请参考： http://www.mathjax.org/</p>
+        </article>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

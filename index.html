@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TES数字教材开发平台，开发说明,教材下载">
+  <meta name="author" content="TES">
+  <title>数字教材开发平台</title>
+  <link rel="icon" href="images/favicon.ico"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/jquery.fancybox.css" rel="stylesheet" media="screen" />
+  <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">数字教材开发平台</a>
+      <ul class="nav navbar-nav nav-collapse">
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="develop.html">开发说明</a>
+        </li>
+        <li>
+          <a href="mathJax.html">公式编辑器</a>
+        </li>
+        <li>
+          <a href="example.html">使用实例</a>
+        </li>
+        <li>
+          <a href="solution.html">问题答疑</a>
+        </li>
+        <li>
+          <a href="http://lt.tes-sys.com:8080/eep-ms/home.html" target="_blank">页面编辑器</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row row-offcanvas row-offcanvas-right">
+      <div class="col-sm-12">
+        <article>
+          <h1 class="center">电子书技术简介</h1>
+          <section class="item">
+            <a class="fancyboxImg" href="images/index/0.png" title="阅读器页面截图">
+              <img src="images/index/0.png" width="220px"/>
+            </a>
+            <h2>客户端阅读器</h2>
+            <p>阅读器负责将书本内容呈现给用户，是电子书与用户交互的介质。</p>
+            <p>E-course电子书阅读器基于CEF(Chromium Embedded Framework)开发。内核与chrome浏览器一致，使用webkit内核，对HTML5的支持较好。（右图为客户端截图）</p>
+          </section>
+          <section class="item">
+            <h2>所用技术</h2>
+            <p><b>HTML</b>(HyperText Mark-up Language)，是一种标记语言，用于描述内容。</p>
+            <p><b>CSS</b>(Cascading Style Sheets)，用于描述页面的样式。</p>
+            <p><b>Javascript</b>是一种在浏览器端运行的脚本语言，主要是负责页面的展示和与后台服务器数据的交互。</p>
+            <p><b>HTML5</b>在HTML基础上新增了很多特性：</p>
+            <div style="margin-left: 35px;">
+              <p><b>多媒体特性：</b>多媒体特性：包括对视频，音频的支持（之前HTML要播放视频或音频只能安装插件或通过flash实现，但仅支持特定的视频和音频格式）</p>
+              <p><b>Web SQL Databases：</b>使用js建立数据库（数据库文件存储在浏览器的缓存目录中），使用sql语句操作数据库（适用的场景：频繁查询数据，数据对安全性不敏感，数据更新较少的场合，这种情况下，为了加快页面响应速度或减轻后端服务器压力，可以在页面初始时将后端数据库的数据加载到浏览器中）</p>
+              <p><b>离线支持：</b>可以将页面缓存下来，即使在无网络连接的情况下，仍然可以访问基于网页的应用。</p>
+              <p><b>Canvas：</b>绘制图形或动画</p>
+              <p><b>WEBGL：</b>对于3D的支持，可以通过此技术绘制3D交互动画或游戏。</p>
+            </div>
+          </section>
+          <section class="item">
+            <a class="fancyboxImg" style="margin-top: -25px;" href="images/index/0-1.png" title="阅读器页面结构分割图">
+              <img src="images/index/0-1.png" width="220px"/>
+            </a>
+            <h2>电子书页面结构简介</h2>
+            <p>电子书与实体书在结构方面基本一致，都是分左右页，具有翻页功能；其中左右页、有无云图的分辨均参考实体书。（右图为阅读器页面结构分割图）</p>
+          </section>
+        </article>
+        <hr>
+        <article>
+          <h1 class="center">电子书制作简介</h1>
+          <section class="item">
+            <h2>实体书拆分</h2>
+            <p><b>内容准备：</b>按照章，节，页进行排版。</p>
+            <p>将页面的内容拆分为段落，图片，音频，视频，flash等无法继续拆分的元素。这些基础元素从原始的PDF中获取，或在实体书提供的资源中获取。</p>
+          </section>
+          <section class="item">
+            <a class="fancyboxImg" data-fancybox-group="gallery" style="margin:-25px 0 0 10px;" href="images/index/1-1.png" title="电子书页面截图">
+              <img src="images/index/1-1.png" width="150px"/>
+            </a>
+            <a class="fancyboxImg" data-fancybox-group="gallery" style="margin-top: -25px;" href="images/index/1.png" title="实体书页面截图">
+              <img src="images/index/1.png" width="162px"/>
+            </a>
+            <h2>页面元素分解</h2>
+            <p>首先将实体书页面的各个元素分解，并归类，归类后如图所示</p>
+          </section>
+          <section class="item">
+            <h2>对比制作</h2>
+            <p>此页面为编辑器制作结果，对比各个元素。</p>
+          </section>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <hr>
+      <div class="copyright">Copyright © 2016 TES. 当前版本 1.2.1</div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+    $(".fancyboxImg").fancybox({helpers : {title : {type : 'over'}}});
+  </script>
+</body>
+</html>
