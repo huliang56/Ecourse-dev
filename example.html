@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TES数字教材开发平台，开发说明,教材下载">
+  <meta name="author" content="TES">
+  <title>数字教材开发平台</title>
+  <link rel="icon" href="images/favicon.ico"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/jquery.fancybox.css" rel="stylesheet" media="screen" />
+  <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">数字教材开发平台</a>
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="develop.html">开发说明</a>
+        </li>
+        <li>
+          <a href="mathJax.html">公式编辑器</a>
+        </li>
+        <li class="active">
+          <a href="example.html">使用实例</a>
+        </li>
+        <li>
+          <a href="solution.html">问题答疑</a>
+        </li>
+        <li>
+          <a href="http://lt.tes-sys.com:8080/eep-ms/home.html" target="_blank">页面编辑器</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>页面制作流程实例</h2>
+        <p>示例：七年级下册P54</p>
+        <div>
+          <table class="table table-bordered">
+            <tr>
+              <th>流程简介</th>
+              <th>步骤详情</th>
+              <th>步骤截图</th>
+            </tr>
+            <tr>
+              <td>1. 选择进入所要制作的页面</td>
+              <td>七年级下册P54</td>
+              <td>
+                <a class="fancyboxImg" data-fancybox-group="zhizuo" href="images/zhizuo/zhizuo1.png" title="选择进入所要制作的页面截图">
+                  <img src="images/zhizuo/zhizuo1.png" width="220px"/>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>2. 新建页面</td>
+              <td>
+                <p>a) P54为第八章第2小节，查看颜色分配表可知为颜色3；</p>
+                <p>b) 页面为左半页，且左侧有云图；</p>
+                <p>c) 输入页码、章节号、章节名等信息，点击确定。</p>
+              </td>
+              <td>
+                <a class="fancyboxImg" data-fancybox-group="zhizuo" href="images/zhizuo/zhizuo2.png" title="新建页面截图">
+                  <img src="images/zhizuo/zhizuo2.png" width="220px"/>              
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>3. 添加内容</td>
+              <td>第一行为普通正文，所以点击“P段落”，输入内容，选择首行缩进2字符后确定；</td>
+              <td>
+                <a class="fancyboxImg" data-fancybox-group="zhizuo" href="images/zhizuo/zhizuo3.png" title="添加内容截图">
+                  <img src="images/zhizuo/zhizuo3.png" width="220px"/>              
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>4. 修改公式</td>
+              <td>对于复杂的公式使用公式编辑器生成，简单的可以直接写，然后修改，即在两边加“$”，注意：“≥”不要使用公式编辑器，使用输入法生成的符号且不能包含在$内。</td>
+              <td>
+                <a class="fancyboxImg" data-fancybox-group="zhizuo" href="images/zhizuo/zhizuo4.png" title="修改公式截图">
+                  <img src="images/zhizuo/zhizuo4.png" width="220px"/>              
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>5. 插入图片</td>
+              <td>将从PDF取出的图片<a href="#qutu">(提取方法见下方)</a>添加到页面中，根据图片样式选择配置项；</td>
+              <td>
+                <a class="fancyboxImg" data-fancybox-group="zhizuo" href="images/zhizuo/zhizuo5.png" title="插入图片截图">
+                  <img src="images/zhizuo/zhizuo5.png" width="220px"/>              
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>6. 添加练习</td>
+              <td>根据题目样式选择相应的配置并逐题添加内容；</td>
+              <td>
+                <a class="fancyboxImg" data-fancybox-group="zhizuo" href="images/zhizuo/zhizuo6.png" title="添加练习截图">
+                  <img src="images/zhizuo/zhizuo6.png" width="220px"/>              
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>7. 添加气泡</td>
+              <td>选中要添加气泡的题目文字，点击“气泡”按钮，输入气泡内容，选择相应配置项。</td>
+              <td>
+                <a class="fancyboxImg" style="float:left;" data-fancybox-group="zhizuo" href="images/zhizuo/zhizuo7.png" title="添加气泡步骤截图1">
+                  <img src="images/zhizuo/zhizuo7.png" width="110px"/>              
+                </a>
+                <a class="fancyboxImg" data-fancybox-group="zhizuo" href="images/zhizuo/zhizuo8.png" title="添加气泡步骤截图2">
+                  <img src="images/zhizuo/zhizuo8.png" width="110px"/>              
+                </a>
+                <a class="fancyboxImg" data-fancybox-group="zhizuo" href="images/zhizuo/zhizuo9.png" title="添加气泡步骤截图3">
+                  <img src="images/zhizuo/zhizuo9.png" width="110px"/>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>8. 添加云图</td>
+              <td>在添加云图的区域点击“云图气泡”按钮，输入内容并选择相应配置项后确定，然后调整位置（注意：页面中有加“$”的公式存在，不能使用拖动，不然代码区域的内容会被MathJax编译）。</td>
+              <td>
+                <a class="fancyboxImg" data-fancybox-group="zhizuo" href="images/zhizuo/zhizuo10.png" title="添加云图">
+                  <img src="images/zhizuo/zhizuo10.png" width="220px"/>              
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>9. 页面调整</td>
+              <td>根据实际情况修改页面排版；</td>
+              <td>
+                <a class="fancyboxImg" data-fancybox-group="zhizuo" href="images/zhizuo/zhizuo11.png" title="页面调整">
+                  <img src="images/zhizuo/zhizuo11.png" width="220px"/>              
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr>
+        <h2 id="qutu">从PDF取图方法</h2>
+        <p>示例：取七年级下册P54的图片</p>
+        <div>
+          <table class="table table-bordered">
+            <tr>
+              <th style="width: 14%;">流程简介</th>
+              <th>步骤详情</th>
+              <th>步骤截图</th>
+            </tr>
+            <tr>
+              <td>1. 确定图片所在的页数</td>
+              <td>打开PDF，找到P54页所在的PDF序号，为62；</td>
+              <td>
+                <a class="fancyboxImg" data-fancybox-group="qutu" href="images/qutu/qutu1.png" title="确定图片所在的页数">
+                  <img src="images/qutu/qutu1.png" width="220px"/>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>2. 使用Adobe Illustrator 打开PDF文件</td>
+              <td>输入要打开的PDF页码：62，其他信息点击确认即可；</td>
+              <td>
+                <a class="fancyboxImg" data-fancybox-group="qutu" href="images/qutu/qutu2.png" title="使用Adobe Illustrator 打开PDF文件">
+                  <img src="images/qutu/qutu2.png" width="220px"/>              
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>3. 提取图片</td>
+              <td>
+                <p>a) 右键释放剪切模板；</p>
+                <p>b) 选中想要的图片复制到一个新的页面中；</p>
+                <p>c) 点击“文档设置”，再点击“编辑画板”；</p>
+                <p>d) 点击图片，生成画板并去掉最外面的“画板1”；</p>
+              </td>
+              <td>
+                <div>
+                  <a class="fancyboxImg" style="float:left;" data-fancybox-group="qutu" href="images/qutu/qutu3.png" title="提取图片： a) 右键释放剪切模板；">
+                    <img src="images/qutu/qutu3.png" width="110px"/>              
+                  </a>
+                  <a class="fancyboxImg" data-fancybox-group="qutu" href="images/qutu/qutu4.png" title="提取图片： b) 选中想要的图片复制到一个新的页面中；">
+                    <img src="images/qutu/qutu4.png" width="110px"/>              
+                  </a>
+                </div>
+                <div>
+                  <a class="fancyboxImg" style="float:left;" data-fancybox-group="qutu" href="images/qutu/qutu5.png" title="提取图片： c) 点击“文档设置”，再点击“编辑画板”；">
+                    <img src="images/qutu/qutu5.png" width="110px"/>              
+                  </a>
+                  <a class="fancyboxImg" data-fancybox-group="qutu" href="images/qutu/qutu6.png" title="提取图片： d) 点击图片，生成画板并去掉最外面的“画板1”；">
+                    <img src="images/qutu/qutu6.png" width="110px"/>              
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>4. 保存图片</td>
+              <td>
+                <p>a) 点击文件导出；</p>
+                <p>b) 选择保存路径，输入文件名：P54，选择文件格式：png，若有多张图片选择使用画板，最后点击导出；</p>
+                <p>c) 设置“png选项”，设置背景色为透明；</p>
+                <p>d) 完成后，关闭Adobe Illustrator 中打开的文件（不需保存），到保存的路径下即可看到图片，文件名分别为P54-01.png、P54-02.png；</p>
+              </td>
+              <td>
+                <div>
+                  <a class="fancyboxImg" style="float:left;" data-fancybox-group="qutu" href="images/qutu/qutu7.png" title="保存图片： a) 点击文件导出；">
+                    <img src="images/qutu/qutu7.png" width="110px"/>              
+                  </a>
+                  <a class="fancyboxImg" data-fancybox-group="qutu" href="images/qutu/qutu8.png" title="保存图片： b) 选择保存路径；">
+                    <img src="images/qutu/qutu8.png" width="110px"/>              
+                  </a>
+                </div>
+                <div>
+                  <a class="fancyboxImg" style="float:left;" data-fancybox-group="qutu" href="images/qutu/qutu9.png" title="保存图片： c) 设置“png选项”，设置背景色为透明；">
+                    <img src="images/qutu/qutu9.png" width="110px"/>              
+                  </a>
+                  <a class="fancyboxImg" data-fancybox-group="qutu" href="images/qutu/qutu10.png" title="保存图片： d) 完成">
+                    <img src="images/qutu/qutu10.png" width="110px"/>              
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+    $(".fancyboxImg").fancybox({helpers : {title : {type : 'over'}}});
+  </script>
+</body>
+</html>
